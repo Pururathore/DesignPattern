@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--http://www.dotnettricks.com/learn/designpatterns/abstract-factory-design-pattern-dotnet-->
+    <!--........................................
+    Abstract Factory Design Pattern - C#
+    Abstract Factory method pattern falls under Creational Pattern of Gang of Four (GOF) Design Patterns in .Net. It is used to create a set of related objects, 
+    or dependent objects. Internally, Abstract Factory use Factory design pattern for creating objects. It may also use Builder design pattern and prototype 
+    design pattern for creating objects. It completely depends upon your implementation for creating objects. In this article, I would like share what is 
+    abstract factory pattern and how is it work?
+
+    What is Abstract Factory Pattern?
+    Abstract Factory patterns acts a super-factory which creates other factories. This pattern is also called as Factory of factories. In Abstract Factory pattern 
+    an interface is responsible for creating a set of related objects, or dependent objects without specifying their concrete classes.
+
+    Abstract Factory Pattern - UML Diagram & Implementation
+    The UML class diagram for the implementation of the abstract factory design pattern is given below:
+
+    The classes, interfaces and objects in the above UML class diagram are as follows:
+
+    AbstractFactory
+    This is an interface which is used to create abstract product
+
+    ConcreteFactory
+    This is a class which implements the AbstractFactory interface to create concrete products.
+
+    AbstractProduct
+    This is an interface which declares a type of product.
+
+    ConcreteProduct
+    This is a class which implements the AbstractProduct interface to create product.
+
+    Client
+    This is a class which use AbstractFactory and AbstractProduct interfaces to create a family of related objects.
+
+    C# - Implementation Code
+    public interface AbstractFactory
+    {
+        AbstractProductA CreateProductA();
+
+        AbstractProductB CreateProductB();
+    }
+
+    public class ConcreteFactoryA : AbstractFactory
+    {
+        public AbstractProductA CreateProductA()
+        {
+            return new ProductA1();
+        }
+
+        public AbstractProductB CreateProductB()
+        {
+            return new ProductB1();
+        }
+    }
+
+    public class ConcreteFactoryB : AbstractFactory
+    {
+        public AbstractProductA CreateProductA()
+        {
+            return new ProductA2();
+        }
+
+        public AbstractProductB CreateProductB()
+        {
+            return new ProductB2();
+        }
+    }
+
+    public interface AbstractProductA { }
+
+    public class ProductA1 : AbstractProductA { }
+
+    public class ProductA2 : AbstractProductA { }
+
+    public interface AbstractProductB { }
+
+    public class ProductB1 : AbstractProductB { }
+
+    public class ProductB2 : AbstractProductB { }
+
+    public class Client
+    {
+        private AbstractProductA _productA;
+        private AbstractProductB _productB;
+
+        public Client(AbstractFactory factory)
+        {
+            _productA = factory.CreateProductA();
+            _productB = factory.CreateProductB();
+        }
+    }
+
+Who is what?
+The classes, interfaces and objects in the above class diagram can be identified as follows:
+
+VehicleFactory - AbstractFactory interface
+
+HondaFactory & HeroFactory- Concrete Factories
+
+Bike & Scooter - AbstractProduct interface
+
+Regular Bike, Sports Bike, Regular Scooter & Scooty - Concreate Products
+
+VehicleClient - Client
+..........................-->
+</body>
+</html>

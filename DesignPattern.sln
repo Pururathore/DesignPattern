@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesignPattern", "D:\POC\DesignPattern\", "{6C847272-2206-4D59-9F50-B885E5AD0A4A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61605"
+		Debug.AspNetCompiler.PhysicalPath = "D:\POC\DesignPattern\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61605\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61605"
+		Release.AspNetCompiler.PhysicalPath = "D:\POC\DesignPattern\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61605\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61605"
+		SlnRelativePath = "D:\POC\DesignPattern\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingaltonPattern", "SingaltonPattern", "{C0333BED-8EC3-4DD2-ADC1-1E5695C1C2DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{C1708DB7-F44A-420A-8929-00C8836C2118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryPattern", "FactoryPattern", "{3B6B2E52-5334-485B-A525-40E087BDA78B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{A3FCBBF0-44AD-4BB8-9BA3-164CA863C94A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern", "AbstractFactoryPattern\AbstractFactoryPattern.csproj", "{1FF7F4CB-D02A-4513-918F-7D298993CA5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C847272-2206-4D59-9F50-B885E5AD0A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C847272-2206-4D59-9F50-B885E5AD0A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C847272-2206-4D59-9F50-B885E5AD0A4A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C847272-2206-4D59-9F50-B885E5AD0A4A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C1708DB7-F44A-420A-8929-00C8836C2118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1708DB7-F44A-420A-8929-00C8836C2118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1708DB7-F44A-420A-8929-00C8836C2118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1708DB7-F44A-420A-8929-00C8836C2118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FCBBF0-44AD-4BB8-9BA3-164CA863C94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FCBBF0-44AD-4BB8-9BA3-164CA863C94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FCBBF0-44AD-4BB8-9BA3-164CA863C94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FCBBF0-44AD-4BB8-9BA3-164CA863C94A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF7F4CB-D02A-4513-918F-7D298993CA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF7F4CB-D02A-4513-918F-7D298993CA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF7F4CB-D02A-4513-918F-7D298993CA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF7F4CB-D02A-4513-918F-7D298993CA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1708DB7-F44A-420A-8929-00C8836C2118} = {C0333BED-8EC3-4DD2-ADC1-1E5695C1C2DA}
+		{A3FCBBF0-44AD-4BB8-9BA3-164CA863C94A} = {3B6B2E52-5334-485B-A525-40E087BDA78B}
+	EndGlobalSection
+EndGlobal
